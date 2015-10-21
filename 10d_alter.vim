@@ -9,24 +9,25 @@
     " Disable AutoComplPop.
         let g:acp_enableAtStartup = 0
     " Use neocomplete.
-        let g:neocomplete#enable_at_startup = 1
-    " Use smartcase.
-        let g:neocomplete#enable_smart_case = 1
-    " Set minimum syntax keyword length.
-        let g:neocomplete#sources#syntax#min_keyword_length = 3
-        let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+    " Uncommenting as no longer using NeoComplete
+            " let g:neocomplete#enable_at_startup = 1
+        " Use smartcase.
+            " let g:neocomplete#enable_smart_case = 1
+        " Set minimum syntax keyword length.
+            " let g:neocomplete#sources#syntax#min_keyword_length = 3
+            " let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
-    "let g:neocomplete#enable_cursor_hold_i = 1
-    " Or set this.
-    "let g:neocomplete#enable_insert_char_pre = 1
+        "let g:neocomplete#enable_cursor_hold_i = 1
+        " Or set this.
+        "let g:neocomplete#enable_insert_char_pre = 1
 
-    "AutoComplPop like behavior.
-    "let g:neocomplete#enable_auto_select = 1
+        "AutoComplPop like behavior.
+        "let g:neocomplete#enable_auto_select = 1
 
-    " Shell like behavior(not recommended).
-    "set completeopt+=longest
-    "let g:neocomplete#enable_auto_select = 1
-    "let g:neocomplete#disable_auto_complete = 1
+        " Shell like behavior(not recommended).
+        "set completeopt+=longest
+        "let g:neocomplete#enable_auto_select = 1
+        "let g:neocomplete#disable_auto_complete = 1
 "=== 60 Omni Completion
     " Enable omni completion.
         autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
@@ -46,12 +47,13 @@
         endif
 "=== 60 NeoComplete
     " Enable heavy omni completion.
-        if !exists('g:neocomplete#sources#omni#input_patterns')
-            let g:neocomplete#sources#omni#input_patterns = {}
-            let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-            let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
-            let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-        endif
+    " Uncommented as no longer using NeoComplete
+        " if !exists('g:neocomplete#sources#omni#input_patterns')
+        "     let g:neocomplete#sources#omni#input_patterns = {}
+        "     let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+        "     let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+        "     let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+        " endif
 "=== 60 OmniComplete
     " For perlomni.vim setting.
     " Uncommented as not sure if installed
@@ -97,6 +99,7 @@
 "==== 10 Paste Scripts
     " Add Plugin information around url if in right folder and url is
     " bundle
+    " To Put ELSEWHERE AS INDIVIDUAL SCRIPT
         function! MyFunc()
             " if BufFile = **/60_Plugins/**
             " let m = getcwd()
