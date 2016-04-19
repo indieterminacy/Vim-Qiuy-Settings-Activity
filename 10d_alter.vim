@@ -106,7 +106,7 @@
             " echo m
 "===== 50 Environment
     " for ascertaining whether working on plugins
-        let plugins_folder     = '60_System/60_Plugins'
+        let plugins_folder     = '50_Environment/60_Plugins'
         " let plugins_production = 'production'
         let buffer_folder      = expand('%:p')
 "===== 20 Content
@@ -177,7 +177,7 @@
             " endif
 "=== 60 Paste Tools
 "==== 60 Yankring
-        let g:yankring_history_dir = '$INDPATH/yankring'
+        let g:yankring_history_dir = '~/20_Content/60_Vim-Qiuy/yankring'
 "= 20 Replace
 "== 40 Movement
 "=== 60 Find Tools
